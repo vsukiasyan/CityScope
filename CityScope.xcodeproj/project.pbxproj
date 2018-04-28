@@ -15,6 +15,7 @@
 		6778DCDF2093F61D007D7F9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6778DCDD2093F61D007D7F9B /* LaunchScreen.storyboard */; };
 		6778DCEA2093F61D007D7F9B /* CityScopeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6778DCE92093F61D007D7F9B /* CityScopeTests.swift */; };
 		6778DCF52093F61D007D7F9B /* CityScopeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6778DCF42093F61D007D7F9B /* CityScopeUITests.swift */; };
+		6778DD07209415C2007D7F9B /* DropablePin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6778DD06209415C2007D7F9B /* DropablePin.swift */; };
 		793E3029F7249D90A4899FEC /* Pods_CityScopeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1ABD4FF6D1037266B5DF3B1 /* Pods_CityScopeTests.framework */; };
 		981DAC5739B952D41F07EB79 /* Pods_CityScope.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B5E120ECBA2DEC6DEE31CF1 /* Pods_CityScope.framework */; };
 /* End PBXBuildFile section */
@@ -52,6 +53,7 @@
 		6778DCF02093F61D007D7F9B /* CityScopeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CityScopeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6778DCF42093F61D007D7F9B /* CityScopeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityScopeUITests.swift; sourceTree = "<group>"; };
 		6778DCF62093F61D007D7F9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6778DD06209415C2007D7F9B /* DropablePin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropablePin.swift; sourceTree = "<group>"; };
 		6AD21863F1852A77FF2E107B /* Pods-CityScope.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CityScope.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CityScope/Pods-CityScope.debug.xcconfig"; sourceTree = "<group>"; };
 		8886847F1ADD755E0A2B6A9C /* Pods-CityScopeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CityScopeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CityScopeUITests/Pods-CityScopeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9B5E120ECBA2DEC6DEE31CF1 /* Pods_CityScope.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CityScope.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -169,6 +171,7 @@
 		6778DD032093F742007D7F9B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				6778DD06209415C2007D7F9B /* DropablePin.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -493,6 +496,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6778DCD72093F61D007D7F9B /* MapVC.swift in Sources */,
+				6778DD07209415C2007D7F9B /* DropablePin.swift in Sources */,
 				6778DCD52093F61D007D7F9B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
