@@ -23,8 +23,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" zoomEnabled="NO" rotateEnabled="NO" pitchEnabled="NO" showsUserLocation="YES" showsCompass="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JTY-KT-rlm">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="786"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" mapType="standard" zoomEnabled="NO" rotateEnabled="NO" pitchEnabled="NO" showsUserLocation="YES" showsCompass="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JTY-KT-rlm">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="790"/>
                             </mapView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xij-ef-FfF">
                                 <rect key="frame" x="0.0" y="44" width="375" height="70"/>
@@ -47,11 +47,11 @@
                                     <constraint firstItem="92N-PN-Fw4" firstAttribute="centerY" secondItem="Xij-ef-FfF" secondAttribute="centerY" id="crw-gc-GbS"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EbE-yF-QoM">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EbE-yF-QoM">
                                 <rect key="frame" x="309" y="728" width="50" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="0GZ-vg-mJ6"/>
-                                    <constraint firstAttribute="width" constant="50" id="RQT-Lv-zvp"/>
+                                    <constraint firstAttribute="width" constant="50" id="4Rw-RL-aUT"/>
+                                    <constraint firstAttribute="height" constant="50" id="kEW-2v-1KC"/>
                                 </constraints>
                                 <state key="normal" image="locationButton"/>
                                 <connections>
@@ -59,37 +59,42 @@
                                     <action selector="centerMapBtnWasPressed:" destination="K7i-gx-8KL" eventType="touchUpInside" id="oQe-Qc-llN"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vnu-CA-kZO">
-                                <rect key="frame" x="0.0" y="786" width="375" height="26"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vnu-CA-kZO">
+                                <rect key="frame" x="0.0" y="801" width="375" height="1"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="C4i-SD-OCE"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="JTY-KT-rlm" firstAttribute="trailing" secondItem="6eA-ii-qwa" secondAttribute="trailing" id="8o3-ZN-CBu"/>
-                            <constraint firstItem="6eA-ii-qwa" firstAttribute="trailing" secondItem="EbE-yF-QoM" secondAttribute="trailing" constant="16" id="HX6-vw-Eg8"/>
-                            <constraint firstItem="JTY-KT-rlm" firstAttribute="top" secondItem="mSh-zQ-Occ" secondAttribute="top" id="KLi-7l-QgK"/>
-                            <constraint firstItem="JTY-KT-rlm" firstAttribute="leading" secondItem="6eA-ii-qwa" secondAttribute="leading" id="VqL-hp-efI"/>
-                            <constraint firstItem="Vnu-CA-kZO" firstAttribute="leading" secondItem="mSh-zQ-Occ" secondAttribute="leading" id="XqZ-h0-xGZ"/>
+                            <constraint firstItem="6eA-ii-qwa" firstAttribute="trailing" secondItem="EbE-yF-QoM" secondAttribute="trailing" constant="16" id="2qV-KV-iI5"/>
+                            <constraint firstItem="JTY-KT-rlm" firstAttribute="leading" secondItem="6eA-ii-qwa" secondAttribute="leading" id="4Qy-ox-ixP"/>
+                            <constraint firstAttribute="trailing" secondItem="Vnu-CA-kZO" secondAttribute="trailing" id="JT4-rU-i3J"/>
+                            <constraint firstItem="JTY-KT-rlm" firstAttribute="top" secondItem="mSh-zQ-Occ" secondAttribute="top" id="Rat-3Q-IyE"/>
+                            <constraint firstItem="EbE-yF-QoM" firstAttribute="bottom" secondItem="Vnu-CA-kZO" secondAttribute="bottom" constant="-20" id="Wd5-dB-FYa"/>
                             <constraint firstItem="Xij-ef-FfF" firstAttribute="leading" secondItem="6eA-ii-qwa" secondAttribute="leading" id="ahu-At-xl9"/>
-                            <constraint firstAttribute="trailing" secondItem="Vnu-CA-kZO" secondAttribute="trailing" id="cfn-fp-Bd0"/>
                             <constraint firstItem="Xij-ef-FfF" firstAttribute="trailing" secondItem="6eA-ii-qwa" secondAttribute="trailing" id="eEZ-Zj-6PO"/>
-                            <constraint firstAttribute="bottom" secondItem="Vnu-CA-kZO" secondAttribute="bottom" id="jjq-0j-WSV"/>
-                            <constraint firstItem="EbE-yF-QoM" firstAttribute="bottom" secondItem="6eA-ii-qwa" secondAttribute="bottom" id="ksr-fR-6UF"/>
                             <constraint firstItem="Xij-ef-FfF" firstAttribute="top" secondItem="6eA-ii-qwa" secondAttribute="top" id="nXz-FB-rkY"/>
-                            <constraint firstItem="Vnu-CA-kZO" firstAttribute="top" secondItem="6eA-ii-qwa" secondAttribute="bottom" constant="8" symbolic="YES" id="nr4-W5-fFa"/>
-                            <constraint firstItem="Vnu-CA-kZO" firstAttribute="top" secondItem="JTY-KT-rlm" secondAttribute="bottom" id="woX-Hh-PKY"/>
+                            <constraint firstItem="Vnu-CA-kZO" firstAttribute="leading" secondItem="mSh-zQ-Occ" secondAttribute="leading" id="ntH-oY-P9i"/>
+                            <constraint firstItem="JTY-KT-rlm" firstAttribute="trailing" secondItem="6eA-ii-qwa" secondAttribute="trailing" id="ohL-4p-mki"/>
+                            <constraint firstAttribute="bottom" secondItem="Vnu-CA-kZO" secondAttribute="bottom" id="rqf-ox-Vh0"/>
+                            <constraint firstItem="Vnu-CA-kZO" firstAttribute="top" secondItem="JTY-KT-rlm" secondAttribute="bottom" id="xb8-Bt-tLy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6eA-ii-qwa"/>
                     </view>
                     <connections>
+                        <outlet property="buttonBottomSpace" destination="Wd5-dB-FYa" id="RZp-oJ-Tzu"/>
                         <outlet property="mapView" destination="JTY-KT-rlm" id="6T7-05-TSc"/>
+                        <outlet property="pullUpView" destination="Vnu-CA-kZO" id="PJj-8I-okp"/>
+                        <outlet property="pullUpViewHeightConstraint" destination="C4i-SD-OCE" id="Whv-Oj-dJH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fpk-Mx-beM" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="K7i-gx-8KL" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="102" y="30"/>
+            <point key="canvasLocation" x="101.59999999999999" y="29.55665024630542"/>
         </scene>
     </scenes>
     <resources>
